@@ -1,0 +1,179 @@
+body {
+
+margin: 0 ;
+padding: 0;
+/*background-color: #E3B6B1;*/
+background-image:url(step1-1.png) ;
+background-size: 100%;
+background-repeat: no-repeat;
+background-position:  top right;
+} 
+
+#menu
+{
+  list-style: none;
+  float: right;
+  text-align: center ;
+  display: flex;
+  position: absolute;
+	top: 5%;
+	left: 40%;
+	transform: translate(-26%, -50%);
+	font-size: 0,5em;
+}
+.menu2
+{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	display: none;
+	width: 30px;
+}
+
+@media only screen and (max-width: 1150px) {
+    #menu {
+        display: none;
+    } .menu2{
+    	display:flex;}
+
+   
+}
+
+
+ul li
+{
+  
+  background: #E3B6B1 ; 
+  margin-right:10px ;
+  padding: 30px;
+  border-radius: 60px 60px 40px 40px;
+  font-family: Comic sans MS;
+  
+}
+ul li a
+{
+    color: #fff ;
+    text-decoration: none;
+
+}
+ a:hover
+ {
+ 	color:  #FFCC66;
+ }
+
+ a:active /* Quand le visiteur clique sur le lien */
+{
+    background-color: #FFCC66;
+}
+.image_responsive{
+position: absolute;
+max-width: 10%;
+top: 5%;
+}
+.title
+{
+
+  position: absolute;
+	top: 9%;
+	left: 55%;
+	transform: translate(-26%, -50%);
+	font-weight: bold ;
+  text-align: center;
+  text-shadow: 6px 2px 4px black;
+  padding: 2px;
+	background-color:rgba(236, 236, 236, 0.7);
+	background-size: 5%;
+	font-size: 4vw;
+	font-family: French Script MT;
+	color: #984F5A;
+	margin-top: 20%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	float: right;
+
+}
+
+
+#test
+{
+  text-align: center;
+}
+h2
+{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  float: left;
+    border-bottom: 2px solid black;   
+  width:100%;
+  clear: both;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h3{
+
+  
+  font-size:30px;
+  text-align: center;
+  padding-bottom: 0;
+}
+p
+{
+  clear: left;
+
+  display: flex;
+  flex-direction: column;
+  font-family: Comic sans MS;
+  font-size: 3vw;
+  text-align: center;
+}
+#apropos
+{
+  background-color:#BBA8A1 ;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin-top: 47%;
+
+}
+#page3
+{
+  clear: both;
+  background-color:#BBA8A1 ;
+  color: #ECECEC;
+  font-size: 30;
+  text-align: center;
+}
+#page5
+{
+  background-color:#FFFFFF ;
+  color: #ECECEC;
+  font-size: 30;
+  background-image:url(fond2.png);
+  background-position:left top;
+  background-repeat:no-repeat;
+  font-family: Arial;
+  text-align: center;
+  background-size: 90% ;
+  width: 100%;
+} 
+
+#page2, #page4
+{
+  clear:both;
+  margin:  0;
+  padding: 0; 
+  font-size: 30;
+  background-color:#E3B6B1;
+  color: #984F5A;
+  font-family: Arial;
+}
+#footer
+{
+	margin-top: 47%;
+  text-align: center;
+  margin: auto;
+  color: #984F5A;
+}
