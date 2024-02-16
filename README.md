@@ -18,7 +18,8 @@ GitHUB est organisé en "Repository", c'est à dire en répertoire (contenant lu
 **Procedure à suivre :**  
 1° - Créez vous un compte sur GitHub : https://github.com/  
 Si besoin, une vidéo pour vous aider à créer votre propre compte GitHUB : [Créer un compte GitHUB](https://docs.github.com/fr/get-started/onboarding/getting-started-with-your-github-account)  
-A noter que **si vous possédez déjà un compte GitHUB, vous pouvez le conserver pour réaliser cet atelier**. Pas besion d'en créer un nouveau.
+A noter que **si vous possédez déjà un compte GitHUB, vous pouvez le conserver pour réaliser cet atelier**. Pas besion d'en créer un nouveau.  
+Remarque importante : **Lors de votre inscription, utilisez une adresse mail valide. GitHUB n'accepte pas les adresses mails temporaires**  
 
 2° - Faites un Fork du Repository suivant : https://github.com/OpenRSI/5MCSI_Metriques.git  
 Voici une vidéo d'accompagnement pour vous aider dans les "Forks" : [Forker ce projet](https://youtu.be/p33-7XQ29zQ)    
@@ -88,4 +89,14 @@ Séquence 4 : Exercices
 Objectif : Apprendre à créer votre application de monitoring  
 Difficulté : Moyenne
 ---------------------------------------------------
-Votre solution est à présent en ligne. Rendez-vous sur la page d'accueil de votre site et suivez les instructions pour réaliser les exercices qui vous sont demandés. Bon courage et bon travail à tous.
+Votre solution est à présent en ligne. Rendez-vous sur la page d'accueil de votre site et suivez les instructions pour réaliser les exercices qui vous sont demandés. Bon courage et bon travail à tous.  
+
+--------------------------------------------------------------------
+Troubleshooting :
+---------------------------------------------------
+Objectif : Visualiser ses logs et découvrir ses erreurs
+---------------------------------------------------
+Lors de vos développements, vous serez peut-être confronté à des erreurs systèmes car vous avez faits des erreurs de syntaxes dans votre code, faits de mauvaises déclarations de fonctions, appelez des modules inexistants, mal renseigner vos secrets, etc…  
+Les causes d'erreurs sont quasi illimitées. **Vous devez donc vous tourner vers les logs de votre système pour comprendre d'où vient le problème** :  
+Voici une vidéo pour accéder aux logs de vos Actions GitHUB : [Vidéo Log GitHUB](https://youtu.be/rhGrDLSFH7Y)  
+Voici une vidéo pour vous expliquer comment accéder au logs de votre serveur Alwaysdata : [Vidéo Log Alwaysdata](https://youtu.be/URWMWqVMS2U)  
