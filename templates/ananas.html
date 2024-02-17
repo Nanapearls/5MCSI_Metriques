@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title > Contact Anaïs Ake </title>
-    <meta http-equiv="content-type" content="text/html" ; charset="utf-8">
-    <link rel="stylesheet" href="{{ url_for('templates', filename='portfoliostyle.css') }}">
-
-    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for(filename='icone.png')}}">
-  </head>
-  <body>
-    <div class="acceuil">
-      <figure><img src="icone.png"
-          class="image_responsive"/>
-          </figure>
-          <figure><img src="ico-remove.png"
-          class="menu2"/></figure>
-
-        <div class="title"><h2>Ma page de contact</h2>
-          <form method="get" action="">
-            <label>Votre nom</label> : <input type="text" name="nom"><br>
-            <label>Votre prénom</label> : <input type="text" name="prenom"><br>
-            <label>Votre message</label> :  <textarea name="message" id="message" cols="40" rows="4"></textarea>
-            <input type="submit" value="Envoyer">
-          </form>
-         <!--     <p><a href="mailto:akeanais@gmail.com">Envoyez-moi un e-mail !</a></p> -->   
-        </div>
+<head>
+  <title>Contact Anaïs Ake</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!-- En supposant que cela est rendu en utilisant Flask, n'utilisez pas url_for directement ici -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='portfoliostyle.css') }}">
+  <!-- De même, utilisez url_for de Flask pour la favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='icone.png') }}">
+</head>
+<body>
+  <div class="acceuil">
+    <figure>
+      <!-- En supposant que ces images sont dans le répertoire static -->
+      <img src="{{ url_for('static', filename='icone.png') }}" class="image_responsive"/>
+    </figure>
+    <figure>
+      <img src="{{ url_for('static', filename='ico-remove.png') }}" class="menu2"/>
+    </figure>
+    <div class="title">
+      <h2>Ma page de contact</h2>
+      <form method="get" action="">
+        <label>Votre nom</label> : <input type="text" name="nom"><br>
+        <label>Votre prénom</label> : <input type="text" name="prenom"><br>
+        <label>Votre message</label> : <textarea name="message" id="message" cols="40" rows="4"></textarea>
+        <input type="submit" value="Envoyer">
+      </form>
+      <!-- <p><a href="mailto:akeanais@gmail.com">Envoyez-moi un e-mail !</a></p> -->
     </div>
-
-    </div>
-  </body>
-  <footer id = "footer"> ANAIS AKE - Copyright All Right Reserved 2024</footer>
+  </div>
+  <!-- Supprimez cette balise </div> supplémentaire -->
+  <footer id="footer">ANAIS AKE - Tous droits réservés 2024</footer>
+</body>
 </html>
-
-
