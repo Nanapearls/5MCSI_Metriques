@@ -35,6 +35,7 @@ https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx</br>C
 
 <p>- - - - - </p>
 <p>Ce nouveau graphique sera accessible sur votre site en ligne via le chemin suivant : https://{Votre URL}/histogramme/</p></p> 
+<pre><code><xmp>
 @app.route('/histogramme/')
 def meteo():
     response = urlopen('https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx')
