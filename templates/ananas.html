@@ -4,18 +4,18 @@
   <title>Contact Anaïs Ake</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <!-- En supposant que cela est rendu en utilisant Flask, n'utilisez pas url_for directement ici -->
-  <link rel="stylesheet" href="{{ url_for('templates', filename='portfoliostyle.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='portfoliostyle.css') }}">
   <!-- De même, utilisez url_for de Flask pour la favicon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('templates', filename='icone.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='icone.png') }}">
 </head>
 <body>
   <div class="acceuil">
     <figure>
       <!-- En supposant que ces images sont dans le répertoire static -->
-      <img src="{{ url_for('templates', filename='icone.png') }}" class="image_responsive"/>
+      <img src="{{ url_for('static', filename='icone.png') }}" class="image_responsive"/>
     </figure>
     <figure>
-      <img src="{{ url_for('templates', filename='ico-remove.png') }}" class="menu2"/>
+      <img src="{{ url_for('static', filename='ico-remove.png') }}" class="menu2"/>
     </figure>
     <div class="title">
       <h2>Ma page de contact</h2>
