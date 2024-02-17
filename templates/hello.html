@@ -23,20 +23,19 @@ Remarque importante : Ce code est à ajouter après la ligne "app = Flask(__name
 </p>
 <p>Notion acquises lors de cet exercice : Vous avez appris lors de cet exercice à créer des API (c'est à dire des routes) dans une application Python. Vous pouvez créer autant d'API (de routes) que vous le souhaitez dans votre application Python.</p>
 <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
-<h3>Exercice 3 : Les données d'une API (3 points)</h3>
-<p>Objectif : Utiliser les données issues d'une API externes pour créer une route adaptée à vos besoins.</p>
-<p>Pour commencer, copier l'URL ci-dessous dans un nouvel onglet de votre navigateur et observez le résultat :</p>
-https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx</p>
-<p>Il s'agit ici de quelques relévés météorologique de la ville Tawarano réalisées au cours de l'année 2017.
-Vous observerez que nous utilisons une API gratuite fourni par Openweathermap. C'est typiquement le format que vous trouverez dans le cadre des services de métriques (Données issues de serveurs, de réseaux, de stockages, etc..).</p>
-<p>Les API fournissent en général des données au format JSON. JSON est un format structuré avec des étiquettes (également appelé des keys) et ont pour objectif de fournir des données "brut".<br/>
-<b>Prenez ici quelques minutes pour "comprendre" la structure de ces données JSON et identifer les clés et les données.</b></p>
+<h3>Exercice 3 : Créer son histogramme (6 points)</h3>
+<p>Objectif : Devenir autonome dans la création de ses graphiques.
+A l'aide des graphiques disponibles dans la galerie open source de Google disponibles à l'adresse suivante 
+: https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery?hl=fr</p>
+<p>créer un nouveau graphique afin de présenter les températures issues du jeux de données suivant :
+
+https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx
+</p>
+https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx</br>Ce nouveau graphique sera accessible sur votre site en ligne via le chemin suivant : https://{Votre URL}/histogramme/</p></p>
+
 <p>- - - - - </p>
-<p>Ce qui nous intéresse à présent, c'est extraire la valeur de [dt] (c'est à dire les dates) et les valeurs stockées dans la clé [main][temp], c'est à dire les températures du jour.</p>
-<p>A noter que les dates ici sont au format "Timestamp". C'est à dire que la donnée est le nombre de secondes depuis le 1 janvier 2000 (un légacy d'UNIX). Les températures sont stockées au format Kelvin (il faudra donc les convertir en °C).</p> 
-<p>Vous allez à présent créer une nouvelle route "/tawarano/" dans votre application Python pour filtrer l'API d'Openweathermap et extraire uniquement les dates et température du jour. Ci-dessous la route à ajouter dans votre application.
-<pre><code><xmp>
-@app.route('/tawarano/')
+<p>Ce nouveau graphique sera accessible sur votre site en ligne via le chemin suivant : https://{Votre URL}/histogramme/</p></p> 
+@app.route('/histogramme/')
 def meteo():
     response = urlopen('https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx')
     raw_content = response.read()
