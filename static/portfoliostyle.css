@@ -1,5 +1,4 @@
 body {
-
 margin: 0 ;
 padding: 0;
 background-color: #E3B6B1;
@@ -7,6 +6,7 @@ background-image:url(step1-1.png) ;
 background-size: 100%;
 background-repeat: no-repeat;
 background-position:  top right;
+min-height: 100vh;	
 } 
 
 #menu
@@ -105,8 +105,7 @@ p
 
 #footer
 {
-  margin-bottom: 47%;
+ margin-top: auto; 
   text-align: center;
-  margin: auto;
   color: #984F5A;
 }
