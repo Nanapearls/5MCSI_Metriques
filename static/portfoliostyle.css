@@ -2,7 +2,7 @@ body {
 
 margin: 0 ;
 padding: 0;
-/*background-color: #E3B6B1;*/
+background-color: #E3B6B1;
 background-image:url(step1-1.png) ;
 background-size: 100%;
 background-repeat: no-repeat;
@@ -105,9 +105,8 @@ p
 
 #footer
 {
-	margin-top: 47%;
+  margin-bottom: 47%;
   text-align: center;
   margin: auto;
   color: #984F5A;
 }
-INE : 123207847AB.
