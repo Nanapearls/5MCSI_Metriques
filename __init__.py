@@ -40,8 +40,8 @@ def meteo():
     image_stream.seek(0)
     image_base64 = base64.b64encode(image_stream.read()).decode('utf-8')
     plt.close()
-    return render_template('histogramme.html', image_base64=image_base64)
-
+   # return render_template('histogramme.html', image_base64=image_base64)
+    return render_template('histogramme.html')
 
 @app.route('/extract-minutes/<date_string>')
 def extract_minutes(date_string):
