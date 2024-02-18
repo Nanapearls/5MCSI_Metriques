@@ -39,7 +39,7 @@ def meteo():
     plt.savefig(image_stream, format='png')
     image_stream.seek(0)
     image_base64 = base64.b64encode(image_stream.read()).decode('utf-8')
-     plt.close()
+    plt.close()
     return render_template('histogramme.html', image_base64=image_base64)
 
 
